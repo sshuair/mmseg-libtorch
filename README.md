@@ -4,12 +4,12 @@
 - Loading the torchscript model in C++.
 
 ## usage
-1. Convert the mmsegmentation pytorch model(.pth) to libtorch model(.pt)
-    - follow the install of mmsegmetation
-    - use the mmseg `tools/pytorch2torchscript.py` convert to model to libtorch `.pt` model.
+1. Convert the mmsegmentation `pytorch model(.pth)` to `libtorch model(.pt)`
+    - follow the install of [MMSegmetation](https://mmsegmentation.readthedocs.io/en/latest/get_started.html)
+    - use the mmseg `tools/pytorch2torchscript.py` tool convert the pytorch `.pth` model to libtorch `.pt` model.
 2. clone this repo and complie local.
     ``` bash
-    git clone 
+    git clone https://github.com/sshuair/mmseg-libtorch
 
     # compile 
     mkdir build && cd build
