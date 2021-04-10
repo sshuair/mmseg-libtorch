@@ -12,6 +12,7 @@
 
 cv::Mat ReadImg(const std::string& filepath){
   cv::Mat image = cv::imread(filepath);  // CV_8UC3
+  cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
   if (image.empty() || !image.data) {
     throw std::invalid_argument( "read image error! check the image." );
   }
