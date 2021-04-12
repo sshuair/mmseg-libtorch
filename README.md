@@ -52,7 +52,6 @@
    | image                               | PyTorch result                      | LibTorch result                     |
    |-------------------------------------|-------------------------------------|-------------------------------------|
    | ![](assets/cityscapes/munster_000059_000019_leftImg8bit_512x1024.png) | ![](assets/cityscapes/munster_000059_000019_leftImg8bit_512x1024_result_pytorch.png) | ![](assets/cityscapes/munster_000059_000019_leftImg8bit_512x1024_result_libtorch.png) |
-   |                                     |                                     |                                     |
 
 
 
@@ -74,7 +73,6 @@
    | image                               | PyTorch result                      | LibTorch result                     |
    |-------------------------------------|-------------------------------------|-------------------------------------|
    | ![](assets/voc2012/2007_000129.jpg) | ![](assets/voc2012/2007_000129_result_pytorch.png) | ![](assets/voc2012/2007_000129_result_libtorch.png) |
-   |                                     |                                     |                                     |
 
 3. FCN - ADE
    ``` bash
@@ -94,4 +92,18 @@
    | image                               | PyTorch result                      | LibTorch result                     |
    |-------------------------------------|-------------------------------------|-------------------------------------|
    | ![](assets/ADE/ADE_val_00000143.jpg) | ![](assets/ADE/ADE_val_00000143_result_pytorch.png) | ![](assets/ADE/ADE_val_00000143_result_libtorch.png) |
-   |                                     |                                     |                                     |
+
+
+## TODO
+- support more MMLab projects
+   - [x] MMSegmentation
+   - [ ] MMDetection
+   - [ ] MMClassification
+- refactor pre and post processing pipeline
+   - [ ] pre-processing
+   - [ ] post-processing
+- inference
+   - [ ] support slide inference
+- utils
+   - [ ] elegant args
+   - [ ] datasets color map, PascalVoc, Cityscapes, ADE
